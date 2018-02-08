@@ -5,11 +5,11 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/waylau/spring-cloud-microservices-development
+          uri: https://github.com/crixue/spring-cloud-micro-various-api-data-service
           search-paths:
           - config-repo
-#          username: crixue@qq.com
-#          password: xue13581321  
+          username: crixue@qq.com
+          password: xue13581321  
 
 eureka:
   client:
