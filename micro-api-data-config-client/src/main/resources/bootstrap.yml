@@ -1,0 +1,6 @@
+spring:
+  cloud:
+    config:
+      name: micro-various-api-data
+      profile: dev
+      uri: http://localhost:8040/

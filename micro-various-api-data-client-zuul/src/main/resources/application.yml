@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: micro-various-api-data-client-zuul
+    
+server:
+  port: 8383
+  
+eureka:
+  client:
+    service-url:
+      defaultZone : http://localhost:8761/eureka/
+
+#这里的配置表示，访问/city/** 直接重定向到service-id为micro-various-api-data-weather-city-eureka-feign的微服务下        
+zuul:
+  routes:
+    city:
+      path: /city/**
+      service-id: micro-various-api-data-weather-city-eureka-feign
+    
+    weather-data:
+      path: /weather-data/**
+      service-id: micro-various-api-data-weather-data-eureka-feign          

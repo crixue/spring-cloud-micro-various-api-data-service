@@ -1,0 +1,23 @@
+#日志配置
+logging:
+  level:
+    root: info
+    com.xrj.springcloud.variousapidata: debug
+  path: F:\\log\\various-api-data
+  
+#spring cloud config
+spring:
+  application:
+    name: micro-various-api-data-weather-show-feign-gateway 
+
+eureka:
+  client:
+    service-url:
+      defaultZone : http://localhost:8761/eureka/
+    
+feign:
+  client:
+    config:
+      feignName:
+        connectTimeout: 6000
+        readTimeout: 6000          

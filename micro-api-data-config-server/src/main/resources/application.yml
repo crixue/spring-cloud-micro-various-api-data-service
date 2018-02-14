@@ -1,3 +1,7 @@
+logging:
+  level:
+    com: DEBUG
+
 spring:
   application:
     name: micro-api-data-config-server
@@ -8,8 +12,8 @@ spring:
           uri: https://github.com/crixue/spring-cloud-micro-various-api-data-service
           search-paths:
           - config-repo
-          username: crixue@qq.com
-          password: xue13581321  
+#          username: crixue@qq.com
+#          password: xue13581321  
 
 eureka:
   client:
